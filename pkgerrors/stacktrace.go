@@ -1,7 +1,7 @@
 package pkgerrors
 
 import (
-	"github.com/pkg/errors"
+	"github.com/WeiquanWa/errors"
 )
 
 var (
@@ -40,7 +40,7 @@ func frameField(f errors.Frame, s *state, c rune) string {
 	return string(s.b)
 }
 
-// MarshalStack implements pkg/errors stack trace marshaling.
+// MarshalStack implements WeiquanWa/errors stack trace marshaling.
 //
 // zerolog.ErrorStackMarshaler = MarshalStack
 func MarshalStack(err error) interface{} {
